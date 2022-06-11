@@ -1,0 +1,74 @@
+/* General */
+body {
+  background: #393e46;
+  overflow: hidden; /* Hide scrollbars */
+  user-select: none;
+}
+button {
+  padding: 7px 12px;
+  border: 1px solid #00adb5;
+  background: #222831;
+  border-radius: 4px;
+  color: #00adb5;
+  white-space: nowrap;
+}
+.btn:hover {
+  background: #2a323c;
+}
+
+/* Button one */
+.button-1 {
+  position: absolute;
+  transition: all 200ms ease-out;
+}
+
+/* Buttony two */
+
+.button-2--animation {
+  animation: myOrbit 2s linear infinite;
+}
+
+@keyframes myOrbit {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+/* Button army */
+.button-3 {
+  position: absolute;
+}
+.buttonArmy {
+  position: "absolute";
+  transition: "all 200ms ease-out;";
+}
+.destroy {
+  position: absolute;
+  transition: all 200ms ease-out;
+}
+
+/* Victory screen */
+
+.hidden {
+  display: none;
+}
+
+.victory {
+  background: #2e2e8e;
+  border-radius: 2rem;
+  border: 1px solid #32a5f7;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  text-align: center;
+}
+.victory-screen:not(.hidden) {
+  display: flex;
+}
+.victory p {
+  color: #fff;
+  font-size: 3rem;
+}
